@@ -1,19 +1,28 @@
 .section{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid rgb(197, 27, 27);
-    background-color: rgb(145, 31, 31);
-    padding: 10px ;
-    color: white;
+    border: 2px solid rgb(0, 0, 0);
     text-decoration: none;
-    
-   
-
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(8, 109, 60);
     
 }
+.welldrop{
+    display: flex;
+    align-items: center;
+}
+.webpage{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+}
+
+
 .navbar{
     display: flex;
     gap: 40px;
@@ -24,13 +33,13 @@
    
 }
 .part{
-    width: 170px;
+    width: 160px;
     height: 100px;
     padding: 20px;
+    cursor: pointer;
     
 }
 .part:hover{
     background-color: rgb(201, 86, 66);
 }
-
 

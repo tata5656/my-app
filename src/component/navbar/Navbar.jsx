@@ -4,9 +4,6 @@ import Link from 'next/link';
 import tree from '/public/icons8-christmas-tree-96.png';
 import Image from 'next/image';
 
-
-
-
 function Navbar() {
   const types=[
     {
@@ -14,15 +11,11 @@ function Navbar() {
       name:'მთავარი გვერდი',
       url:'/'
       
-     
-    
     },
     {
       id:2,
       name:'სახალისო აქტივობა',
       url:'/funact',
-      
-     
       
     },
     {
@@ -32,30 +25,25 @@ function Navbar() {
     },
     {
       id:4,
-      name:'მეტი ინფორმაცია',
-      url:'/moreinfo'
-    },
+      name:'გახდი ჩვენი გუნდის წევრი',
+      url:'/joinus'
+    }
     
   ]
  return( 
-  <section>
-  
-  <div className={styles.section}>
+   
+  <section className={styles.section}>
   <div className={styles.welldrop}>
   
-    <Image src={tree} alt="christmas tree" />
+    <Image src={tree} alt="christmas tree" className={styles.imgTree}/>
+   <h1 className={styles.webpage}>Merry Christmas</h1>
     </div>
     <div className={styles.navbar}>
     
     {types.map((link) => (
             <Link href={link.url} className={styles.part}>{link.name}</Link>
-    ))}
-    
+          ))}
     </div>
-    </div>
-    <div className={styles.onesect}>
-     
-   </div>
     </section>
  )
 }

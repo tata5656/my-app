@@ -1,12 +1,12 @@
 .section{
-    background: linear-gradient(to bottom, #194c33, #a73535);
+    background-color: rgb(1,36,19);
     font-size: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
     height: 200px;
-    padding: 50px;
+   position: relative;
     border: 2px solid black;
 }
 .items{
@@ -19,7 +19,7 @@ text-align: center;
 color: rgb(246, 247, 233);
 font-size: 20px;
 border: 1px solid black;
-padding: 20px 60px;
+
 cursor: pointer;
 border-radius: 5%;
 display: flex;

@@ -6,6 +6,7 @@ function layout({children}) {
     <div>
          <h1 className={styles.funact}>სახალისო აქტივობა</h1>
         {children}
+      
     </div>
    
   )

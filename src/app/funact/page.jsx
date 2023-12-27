@@ -10,7 +10,7 @@ function page() {
     <main className={styles.cardcontainer}>
     <div className={styles.items}>
       
-    <Link href={"/funact/santa-claus"} className={styles.item}>
+    <Link href={"/funact/santaClaus"} className={styles.item}>
     <span className={styles.title}> სანტა კლაუსის გამოძახება</span>
          <h6 className={styles.test}>გაახალისე საყვარელი ადამიანები</h6>
          <h6 className={styles.test}>ფასი:40$</h6>

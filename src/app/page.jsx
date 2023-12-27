@@ -5,9 +5,11 @@ import christmas from '/public/santa1234.jpg'
 
 
 
+
 function Page() {
   return (
     <section className={styles.section}>
+      
     <div className={styles.item}>
       <h1 className={styles.title}>
        ახალ წელს ყოველთვის ერთად
@@ -22,8 +24,16 @@ function Page() {
 <h1 className={styles.h1}>ამის გამო დაარსდა ჩვენი გვერდი</h1>
     </div>
     <div className={styles.item}>
-     <Image src={christmas} alt='christmas' className={styles.jpg}/>
+     <Image 
+     src={christmas}
+      alt='christmas'
+     className={styles.jpg}
+     width={500}
+     height={200}
+     />
     </div>
+    
+   
   </section>
   )
 }

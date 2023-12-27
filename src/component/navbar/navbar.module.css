@@ -4,12 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid rgb(0, 0, 0);
     text-decoration: none;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(8, 109, 60);
+   background:transparent;
+   padding: 5px 10px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     
 }
 .welldrop{
@@ -33,13 +34,9 @@
    
 }
 .part{
-    width: 160px;
-    height: 100px;
-    padding: 20px;
-    cursor: pointer;
-    
+    transition: 0.3s ease;
 }
 .part:hover{
-    background-color: rgb(201, 86, 66);
+    color: aquamarine;
 }
 

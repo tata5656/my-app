@@ -1,35 +1,17 @@
 .section{
-    background-color: rgb(1,36,19);
     font-size: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: black;
     height: 200px;
    position: relative;
     border: 2px solid black;
+    background: transparent;
 }
-.items{
-width: 400px;
-height: 80px;
-justify-content: center;
-align-items: center;
-color:rgb(0, 0, 0);
-text-align: center;
-color: rgb(246, 247, 233);
-font-size: 20px;
-border: 1px solid black;
-
-cursor: pointer;
-border-radius: 5%;
-display: flex;
-
+.coloritem{
+    background-color: rgb(66, 19, 19);
+    height: 80px;
+    width: 100%;
 }
-.items:hover{
-    background-color: #927d7d;
-    width: 350px;
-    transition: 1s;
-    height: 70px;
-    font-size: 15px;
 
-}
+

@@ -10,8 +10,9 @@ import Button from '@/component/button/Button'
 
 function page() {
   return (
-    <section>
-   <div>
+    <main className={styles.container}>
+     <div>
+   <div className={styles.cards}>
     
     <h3 className={styles.h3}>ნაძვის ხე</h3>
    <Treetwo/>
@@ -24,17 +25,20 @@ function page() {
      <h3 className={styles.h3}>განათება</h3>
    <Treelights/>
      </div>
-    
+     <Button title={'შეიძინეთ'} url={''}/>
+    </div>
+    <br/>
      <div className={styles.textbox}>
-      <div className={styles.text}>
-       <h1></h1>
-      </div>
-    <Button url={'/joinus'} title={'რეგისტრაცია'}/>
-      
-</div>
+      <h1 className={styles.title}>არ დაგავიწყდეს !</h1>
+      <br/>
+      <span className={styles.test}>თუ მოგწონს ჩვენი გვერდი და გსურთ მეტი შეიტყოთ და ნახოთ ყველა სიახლე აუცილებლად დარეგისტრირდით და გახდით ჩვენი გუნდის წევრი.
+     </span>
+      <p className={styles.underpara}>გადადი შემდეგ გვერდზე და შეავსე ანკეტა</p>
+     <Button title={"რეგისტრაცია"} url={"/joinus"}/>
+  </div>
       
 
-    </section>     
+    </main>     
          
 
   )

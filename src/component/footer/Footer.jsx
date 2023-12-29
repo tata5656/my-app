@@ -8,7 +8,14 @@ function Footer() {
       
     </div>
     <div className={styles.item}>
-
+    <div className={styles.textbox}>
+      <div className={styles.text}>
+      <h1>მოიწონეთ ჩვენი გვერდი</h1>
+      </div>
+      <div className={styles.text}>
+      <h1>შეგიშლიათ გამოიყენოთ</h1>
+      </div>
+    </div>
     </div>
     
     </section>

@@ -3,12 +3,11 @@
     height: 40px;
     line-height: 40px;
     border-radius: 100px;
-    background-color: aliceblue;
     font-weight: 700;
     color: rgb(47, 197, 47);
-    border:3px solid aliceblue;
     position: absolute;
     bottom: 10px;
     right:10px;
+    transition: 0.8s;
 
   }

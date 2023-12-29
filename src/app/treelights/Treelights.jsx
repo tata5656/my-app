@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from './treelights.module.css'
-import Image from 'next/image'
-import buy from '/public/icons8-shopping-cart-48.png'
 import Buybutton from '@/component/buybutton/Buybutton'
 
 

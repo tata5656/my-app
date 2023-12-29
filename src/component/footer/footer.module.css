@@ -1,6 +1,6 @@
 .section{
     font-size: 30px;
-    display: flex;
+    display: block;
     justify-content: space-between;
     color: black;
     height: 200px;
@@ -9,9 +9,15 @@
     background: transparent;
 }
 .coloritem{
-    background-color: rgb(66, 19, 19);
+    background-color: rgb(12, 77, 57);
     height: 80px;
     width: 100%;
 }
 
+.textbox{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(69, 74, 78);
+    font-size: 20px;
+}
 

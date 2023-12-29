@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './treetwo.module.css'
 import Buybutton from '@/component/buybutton/Buybutton'
+import Button from '@/component/button/Button'
 
 
 function Treetwo() {
@@ -16,7 +17,7 @@ function Treetwo() {
             <h5 className={styles.h5}>2 მ ულამაზესი ნაძვის ხე</h5>
             <h4 className={styles.coast}>70$</h4>
             </div>
-           <Buybutton/>
+          <Buybutton/>
         </div>
        
       </div>
@@ -99,9 +100,8 @@ function Treetwo() {
        </div>
       
       </div>
-    
   </div>
-
+  
   )
 }
 

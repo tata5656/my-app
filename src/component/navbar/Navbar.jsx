@@ -3,6 +3,7 @@ import styles from './navbar.module.css'
 import Link from 'next/link';
 import tree from '/public/icons8-christmas-tree-96.png';
 import Image from 'next/image';
+import Theme from '../theme/Theme';
 
 function Navbar() {
   const types=[
@@ -36,7 +37,7 @@ function Navbar() {
   <div className={styles.welldrop}>
   
     <Image src={tree} alt="christmas tree" className={styles.imgTree}/>
-   <h1 className={styles.webpage}>Merry Christmas</h1>
+   <Theme/>
     </div>
     <div className={styles.navbar}>
     

@@ -4,7 +4,7 @@
     justify-content: space-between;
     color: black;
     height: 200px;
-   position: relative;
+    position: relative;
     border: 2px solid black;
     background: transparent;
 }
@@ -16,8 +16,25 @@
 
 .textbox{
     display: flex;
-    justify-content: space-between;
     color: rgb(69, 74, 78);
     font-size: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
+.socialnetworks{
+    display: flex;
+    gap: 10px;
 
+
+}
+.icon{
+    cursor: pointer;
+}
+.text{
+    text-align: center;
+    align-items: center;
+    display: block;
+    gap: 50px;
+    width: 100%;
+}

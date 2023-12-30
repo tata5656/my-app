@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './page.module.css'
 import Button from '@/component/button/Button'
 
+
 function page() {
   return (
             <div className={styles.div}>
@@ -22,7 +23,8 @@ function page() {
           ></textarea>
          <div className={styles.buttoncontainer}> 
           <Button title={"back"} url={'/funact'} />
-          <Button title={'send'} url={''}/>
+         <Button title={'send'} url={''} />
+        
         </div>
         </form>
       </div>

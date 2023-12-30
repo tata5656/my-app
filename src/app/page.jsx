@@ -9,7 +9,6 @@ import christmas from '/public/santa1234.jpg'
 function Page() {
   return (
     <section className={styles.section}>
-      
     <div className={styles.item}>
       <h1 className={styles.title}>
        ახალ წელს ყოველთვის ერთად

@@ -1,16 +1,37 @@
-import React from 'react'
+
+'use client';
+import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '@/component/button/Button'
 
+function Crud() {
+ const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [userId, setUserId] = useState(1);
+ 
 
-function page() {
+ const handleSubmit = () => {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify({
+        title,
+        body: desc,
+        userId,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  };
+
   return (
     <div className={styles.container}>
     <div className={styles.formbox}>
         <h1 className={styles.title}>Sign up</h1>
-        <form>
+        <div>
             <div className={styles.group}>
             <div className={styles.inputgroup}>
               <Image 
@@ -20,41 +41,55 @@ function page() {
                height={15}
                className={styles.icon}
                />
-               <input type='text' placeholder='name'  className={styles.input}/>
+               <input
+                type='text'
+                 placeholder='name' 
+                  className={styles.input}
+                  onChange={(e) => setTitle(e.target.value)}
+                  />
             </div>
 
             <div className={styles.inputgroup}>
-              <Image 
+            <Image 
+              src={'/icons8-person-30.png'}
+               alt='person'
+               width={15}
+               height={15}
+               className={styles.icon}
+               />
+               <input 
+               type='text'
+                placeholder='last name'
+                 className={styles.input}
+                 onChange={(e) => setDesc(e.target.value)}
+                 />
+            </div>
+
+            <div className={styles.inputgroup}>
+            <Image 
               src={'/icons8-mail-24.png'}
                alt='email'
                width={15}
                height={15}
              className={styles.icon}
                 />
-               <input type='email' placeholder='email' className={styles.input}/>
-            </div>
-
-            <div className={styles.inputgroup}>
-              <Image 
-              src={'/icons8-lock-30.png'}
-               alt='lock'
-               width={15}
-               height={15}
-             className={styles.icon}
-
-               />
-               <input type='lock' placeholder='password' className={styles.input}/>
+               <input 
+               type='email'
+                placeholder='email'
+                 className={styles.input}
+                 onChange={() => setUserId(1)}
+                 />
             </div>
             <p className={styles.p}>lost password <Link href={''} className={styles.link}>Click here!</Link></p>
             </div>
-            <div className={styles.buttonbox}>
-                <button className={styles.button}>sign up</button>
-                <button className={styles.button}>sign in</button>
+            <div className={styles.buttonbox}  >
+                <button className={styles.button} onClick={handleSubmit}>გაგზავნა</button>
             </div>
-        </form>
+        </div>
     </div>
     </div>
   )
 }
 
-export default page
+export default Crud
+

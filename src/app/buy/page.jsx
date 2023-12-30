@@ -7,8 +7,9 @@ import Button from '@/component/button/Button'
 
 
 
+ function page() {
 
-function page() {
+
   return (
     <main className={styles.container}>
      <div>
@@ -24,7 +25,7 @@ function page() {
      <div>
      <h3 className={styles.h3}>განათება</h3>
    <Treelights/>
-     </div>
+  </div>
      <Button title={'შეიძინეთ'} url={''}/>
     </div>
     <br/>

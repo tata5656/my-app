@@ -1,36 +1,48 @@
+'use client'
 
-'use client';
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './page.module.css'
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
+import Crud from '../page';
+import Delete from '../delete/page';
 
-function Crud() {
- const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
-  const [userId, setUserId] = useState('');
- 
+function Edit() {
+  const [name, setName] = useState('');
+  const [email , setEmail] = useState('');
+  const [id , setId] =useState ('');
+  const [data , setData] = useState({});
+  const [users, setUsers] = useState();
 
- 
+  useEffect(()=>{
+    fetch("https://jsonplaceholder.typicode.com/users/3")
+    .then((res)=>res.json())
+    .then((json)=>{
+      setData(json)
+      setName(json.name);
+      setEmail(json.email);
+      setId(json.id);
+    });
+  },[])
 
- const handleSubmit = () => {
-    fetch("https://jsonplaceholder.typicode.com/users", {
-      method: "POST",
-      body: JSON.stringify({
-        name:title,
-        email: desc,
-        id:userId,
+
+
+  const edit =()=>{
+    fetch("https://jsonplaceholder.typicode.com/users/3",{
+      method: 'PUT',
+      body:JSON.stringify({
+        id:3,
+        name:name,
+        email:email,
       }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
+      headers:{
+        'Content-type':'application/json; charset=UTF-8',
+      }
     })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-  };
-
+    .then((res)=>res.json())
+    .then((json)=>console.log(json));
+  }
   
-
   return (
     <div className={styles.container}>
     <div className={styles.formbox}>
@@ -47,9 +59,9 @@ function Crud() {
                />
                <input
                 type='text'
-               placeholder='name'
+                 placeholder={data.name}
                   className={styles.input}
-                  onChange={(e) => setTitle(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                   />
             </div>
 
@@ -63,9 +75,9 @@ function Crud() {
                />
                <input 
                type='text'
-               placeholder='email'
+               placeholder={data.email}
                  className={styles.input}
-                 onChange={(e) => setDesc(e.target.value)}
+                 onChange={(e) => setEmail(e.target.value)}
                  />
             </div>
 
@@ -79,24 +91,24 @@ function Crud() {
                 />
                <input 
                type='text'
-               placeholder='user id'
+                placeholder={data.id}
                  className={styles.input}
-                 onChange={(e) => setUserId(e.target.value)}
+                 onChange={(e) => setId(e.target.value)}
                  />
             </div>
-            <p className={styles.p}> if you want to change something<Link href={'joinus/edit'} className={styles.link}>click edit</Link></p>
             </div>
   <div className={styles.buttonbox}  >
-                <button className={styles.button} onClick={handleSubmit}>გაგზავნა</button>
                <div>
+               <button className={styles.button} onClick={edit}>edit</button>
+               <Delete/>
+              
     </div>
-          
-            </div>
-        </div>
-  </div>*
+               
+ </div>
+  </div>
+    </div>
     </div>
   )
 }
 
-export default Crud
-
+export default Edit

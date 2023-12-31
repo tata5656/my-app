@@ -1,23 +1,14 @@
-import React from 'react'
-import styles from './footer.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from "react";
+import styles from "./footer.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
-   <section className={styles.section}>
-    <div className={styles.coloritem}>
-      
-    </div>
-    <div className={styles.item}>
-    <div className={styles.textbox}>
-      <div className={styles.text}>
-      <h1>მოიწონეთ ჩვენი გვერდი</h1>
-      </div>
-      <div className={styles.text}>
-      <h1>შეგიშლიათ გამოიყენოთ</h1>
-      <div className={styles.socialnetworks}>
-        <Link href='https://www.facebook.com/'>
+    <div className={styles.container}>
+      <span className={styles.span}>შეგიძლიათ გამოიყენოთ</span>
+      <div className={styles.socialNetworks}>
+      <Link href='https://www.facebook.com/'>
         <Image
          src='/1.png'
           width={20} 
@@ -53,13 +44,9 @@ function Footer() {
          />
         </Link>
        
-        </div>
       </div>
     </div>
-    </div>
-    
-    </section>
- )
+  );
 }
 
-export default Footer
+export default Footer;

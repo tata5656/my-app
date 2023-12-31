@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 10px 100px;
+    
   }
   
   .title {
@@ -30,6 +31,7 @@
    width: 400px;
    border: 2px solid rgb(205, 73, 50);
    border-radius: 20%;
+  
   }
   
   .desc {

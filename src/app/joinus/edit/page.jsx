@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import styles from './page.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
-import Crud from '../page';
 import Delete from '../delete/page';
 
 function Edit() {
@@ -96,6 +95,7 @@ function Edit() {
                  onChange={(e) => setId(e.target.value)}
                  />
             </div>
+            <p className={styles.p}> if you want to register<Link href={'./register'} className={styles.link}>click registration</Link></p>
             </div>
   <div className={styles.buttonbox}  >
                <div>

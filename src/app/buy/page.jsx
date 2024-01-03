@@ -35,7 +35,7 @@ import Button from '@/component/button/Button'
       <span className={styles.test}>თუ მოგწონს ჩვენი გვერდი და გსურთ მეტი შეიტყოთ და ნახოთ ყველა სიახლე აუცილებლად დარეგისტრირდით და გახდით ჩვენი გუნდის წევრი.
      </span>
       <p className={styles.underpara}>გადადი შემდეგ გვერდზე და შეავსე ანკეტა</p>
-     <Button title={"რეგისტრაცია"} url={"/joinus"}/>
+     <Button title={"რეგისტრაცია"} url={"/joinus/register"}/>
   </div>
       
 

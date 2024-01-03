@@ -7,9 +7,9 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   max-height: 100vh;
-  place-items: center;
+  overflow-x: hidden;
+ align-items: center;
  
 }
 a {
@@ -21,6 +21,7 @@ a {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
+ margin: 0 auto;
  /*background:url('https://images.unsplash.com/photo-1513297887119-d46091b24bfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hyaXN0bWFzJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');*/
  
 }
@@ -28,16 +29,17 @@ a {
  transition: 1s all ease;
 }
 .dark{
-  background:url('https://media.istockphoto.com/id/959756872/photo/real-backlit-dust-particles-with-real-lens-flare.jpg?s=612x612&w=0&k=20&c=0JJAgLou5f2skM-yr-n6e15ppoM_d0e2y-SFFiyY6hE=');
+  background:url('https://media.istockphoto.com/id/959756872/photo/real-backlit-dust-particles-with-real-lens-flare.jpg?s=612x612&w=0&k=20&c=0JJAgLou5f2skM-yr-n6e15ppoM_d0e2y-SFFiyY6hE=') no-repeat;
   color:white;
-  background-size: 100%;
-  height: 1000px;
-  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
   
 }
 .light{
-  background: url('https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&w=600');
-  background-size: 100%;
-  background-attachment: fixed;
+  background: url('https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat;
+  background-size: cover;
+  min-height: 100vh;
  color: black;
+ background-position: center;
 }

@@ -36,8 +36,8 @@ function Crud() {
     <div className={styles.formbox}>
         <h1 className={styles.title}>Sign up</h1>
         <div>
-            <div className={styles.group}>
-            <div className={styles.inputgroup}>
+            <div className={styles.group} >
+            <div className={styles.inputgroup}  >
               <Image 
               src={'/icons8-person-30.png'}
                alt='person'
@@ -62,14 +62,14 @@ function Crud() {
                className={styles.icon}
                />
                <input 
-               type='text'
+               type='mail'
                placeholder='email'
                  className={styles.input}
                  onChange={(e) => setDesc(e.target.value)}
                  />
             </div>
 
-            <div className={styles.inputgroup}>
+            <div className={styles.inputgroup} >
             <Image 
               src={'/icons8-person-30.png'}
                alt='person'
@@ -84,7 +84,7 @@ function Crud() {
                  onChange={(e) => setUserId(e.target.value)}
                  />
             </div>
-            <p className={styles.p}> if you want to change something<Link href={'joinus/edit'} className={styles.link}>click edit</Link></p>
+            <p className={styles.p}> if you want to change something<Link href={'./edit'} className={styles.link}>click edit</Link></p>
             </div>
   <div className={styles.buttonbox}  >
                 <button className={styles.button} onClick={handleSubmit}>გაგზავნა</button>

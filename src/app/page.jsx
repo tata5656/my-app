@@ -44,10 +44,8 @@ function Page() {
     width={300}
     height={400}
     className={styles.jpg}
-    /*
     alt='picture'
-    width={330}
-  height={400}*/
+   
   />
     </div>
     

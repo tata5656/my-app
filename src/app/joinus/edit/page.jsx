@@ -11,7 +11,7 @@ function Edit() {
   const [email , setEmail] = useState('');
   const [id , setId] =useState ('');
   const [data , setData] = useState({});
-  const [users, setUsers] = useState();
+ 
 
   useEffect(()=>{
     fetch("https://jsonplaceholder.typicode.com/users/3")
@@ -45,7 +45,7 @@ function Edit() {
   return (
     <div className={styles.container}>
     <div className={styles.formbox}>
-        <h1 className={styles.title}>Sign up</h1>
+        <h1 className={styles.title}>Edit</h1>
         <div>
             <div className={styles.group}>
             <div className={styles.inputgroup}>

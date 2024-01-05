@@ -24,8 +24,8 @@ function Navbar() {
     {
       imagesrc:'/icons8-shopping-cart-24.png',
       id:3,
-      name:'პროდუქტის შეძენა',
-      remote:'/buy',
+      name:'პროდუქტის დათვალიერება',
+      remote:'/products',
     },
     {
       imagesrc:'/icons8-group-48.png',
@@ -40,7 +40,10 @@ function Navbar() {
   <section className={styles.section}>
   <div className={styles.welldrop}>
     
-    <Image src={tree} alt="christmas tree" className={styles.imgTree}/>
+    <Image
+     src={tree}
+     alt="christmas tree"
+     className={styles.imgTree}/>
    <Theme/>
 
     </div>

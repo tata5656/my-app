@@ -8,7 +8,7 @@ import Link from 'next/link'
 function Crud() {
  const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
-  const [userId, setUserId] = useState('');
+  const [userId, setUserId] = useState("");
  
 
  
@@ -93,7 +93,7 @@ function Crud() {
           
             </div>
         </div>
-  </div>*
+  </div>
     </div>
   )
 }

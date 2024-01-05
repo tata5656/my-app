@@ -2,10 +2,24 @@ import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import like from '/public/icons8-like-24.png'
+import unlike from '/public/icons8-unlike-24.png'
+import love from '/public/icons8-love-26.png'
+
 
 function Footer() {
   return (
     <div className={styles.container}>
+      <div className={styles.cont}>
+        <h1>შეაფასე</h1>
+        <div className={styles.like}>
+        <Image src={like} alt='like' className={styles.social} />
+        <Image src={unlike} alt='unlike' className={styles.social} />
+        <Image src={love} alt='love' className={styles.social} />
+
+        </div>
+
+      </div>
       <span className={styles.span}>შეგიძლიათ გამოიყენოთ</span>
       <div className={styles.socialNetworks}>
       <Link href='https://www.facebook.com/'>
